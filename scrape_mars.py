@@ -42,7 +42,7 @@ def scrape_mars_image():
         browser = init_browser()
 
         image_url_featured = 'https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars'
-        browser.visit(image_url_featured
+        browser.visit(image_url_featured)
         html_image = browser.html
         
         soup = BeautifulSoup(html_image, 'html.parser')
